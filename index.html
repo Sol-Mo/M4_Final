@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/b62448c0e0.js" crossorigin="anonymous"></script>
+    <title>Presupuesto APP</title>
+</head>
+
+<body>
+
+    <h3>PRESUPUESTO APP</h3>
+
+    <div class="container">
+        <section class="ingreso-datos">
+            <form class="presupuesto" id="presupuesto">
+                <label for="">Ingresa Tu Presupuesto</label><br>
+                <input type="text" id="presupuestoIngresado"><br>
+                <button>Calcular</button>
+            </form>
+            <form class="gastos" id="gastos">
+                <label for="">Ingresa el nombre del gasto</label><br>
+                <input type="text" id="nombreGasto"><br>
+                <label for="">Ingresa La Cantidad Del Gasto</label><br>
+                <input type="text" id="gastosIngresado"><br>
+                <button>Añadir Gasto</button>
+            </form>
+        </section>
+        <section class="calcular-datos">
+            <div class="info">
+                <div class="info__presupuesto">
+                    <h6>PRESUPUESTO</h6>
+                    <span id="mostrarPresupuesto">$0</span>
+                </div>
+                <div class="info__gastos">
+                    <h6>GASTOS</h6>
+                    <span id="mostrarGasto">$0</span>
+                </div>
+                <div class="info__saldo">
+                    <h6>SALDO</h6>
+                    <span id="mostrarSaldo">$0</span>
+                </div>
+            </div>
+            <div class="listaGastos">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>GASTO</td>
+                            <td>VALOR</td>
+                            <td></td>
+                    </thead>
+                    </tr>
+
+                    <tbody id='datoTabla'>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
